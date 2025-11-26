@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanías en Tejidos y Chompas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f6f6f6;
+        }
+        header {
+            background: #8b3e2f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 12s infinite;
+        }
+        .slides img {
+            width: 100%;
+        }
+        @keyframes slide {
+            0% { margin-left: 0; }
+            33% { margin-left: -100%; }
+            66% { margin-left: -200%; }
+            100% { margin-left: 0; }
+        }
+        .contenido {
+            padding: 20px;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .galeria img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Artesanías en Tejidos y Chompas</h1>
+    <p>Hecho a mano con tradición y cultura</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#galeria">Galería</a>
+    <a href="#videos">Videos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="inicio" class="slider">
+    <div class="slides">
+        <img src="img/slide1.jpg" alt="Imagen 1">
+        <img src="img/slide2.jpg" alt="Imagen 2">
+        <img src="img/slide3.jpg" alt="Imagen 3">
+    </div>
+</section>
+
+<section id="productos" class="contenido">
+    <h2>Productos Artesanales</h2>
+    <p>Aquí encontrarás tejidos, chompas, gorros, bufandas y más productos hechos con lana y fibras naturales.</p>
+    <ul>
+        <li>Chompas de alpaca</li>
+        <li>Gorros tradicionales</li>
+        <li>Bufandas artesanales</li>
+        <li>Guantes y medias</li>
+    </ul>
+</section>
+
+<section id="galeria" class="contenido">
+    <h2>Galería de Imágenes</h2>
+    <div class="galeria">
+        <img src="img/g1.jpg" alt="Tejido 1">
+        <img src="img/g2.jpg" alt="Tejido 2">
+        <img src="img/g3.jpg" alt="Tejido 3">
+        <img src="img/g4.jpg" alt="Tejido 4">
+        <img src="img/g5.jpg" alt="Tejido 5">
+        <img src="img/g6.jpg" alt="Tejido 6">
+    </div>
+</section>
+
+<section id="videos" class="contenido">
+    <h2>Videos</h2>
+    <p>Conoce el proceso de elaboración y las tradiciones detrás de cada pieza:</p>
+
+    <video width="100%" controls>
+        <source src="videos/video1.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+    </video>
+
+    <br><br>
+
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<section id="contacto" class="contenido">
+    <h2>Contacto</h2>
+    <p>Para pedidos y consultas, escribe a:</p>
+    <p><strong>Email:</strong> artesanias@example.com</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/51999999999" target="_blank">+51 999 999 999</a></p>
+    <p>Síguenos en nuestras redes sociales:</p>
+    <ul>
+        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2025 Artesanías en Tejidos — Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
