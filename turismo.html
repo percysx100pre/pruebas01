@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo en Nuñoa - Melgar, Puno</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #eef0f1;
+        }
+        header {
+            width: 100%;
+            height: 300px;
+            background-image: url('img/banner_turismo.jpg'); /* Cambiar banner aquí */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background: #1a4b75;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            padding: 14px 20px;
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover {
+            background: #245f94;
+        }
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 12s infinite;
+        }
+        .slides img {
+            width: 100%;
+        }
+        @keyframes slide {
+            0% { margin-left: 0; }
+            33% { margin-left: -100%; }
+            66% { margin-left: -200%; }
+            100% { margin-left: 0; }
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 12px;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 15px;
+        }
+        .galeria img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: #1a4b75;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Turismo en Nuñoa</h1>
+    <p>Descubre los paisajes, la cultura y las tradiciones del Altiplano</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#lugares">Lugares Turísticos</a>
+    <a href="#gastronomia">Gastronomía</a>
+    <a href="#galeria">Galería</a>
+    <a href="#videos">Videos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="inicio" class="slider">
+    <div class="slides">
+        <img src="img/t1.jpg" alt="Paisajes de Nuñoa">
+        <img src="img/t2.jpg" alt="Turismo Rural">
+        <img src="img/t3.jpg" alt="Tradiciones de Nuñoa">
+    </div>
+</section>
+
+<section id="lugares">
+    <h2>Lugares Turísticos Destacados</h2>
+    <ul>
+        <li>Complejo arqueológico de Nuñoa</li>
+        <li>Mirador natural de Ichu</li>
+        <li>Aguas termales de Nuñoa</li>
+        <li>Valle ganadero y paisaje altoandino</li>
+        <li>Estancias tradicionales de camélidos</li>
+    </ul>
+    <p>Nuñoa es conocido por su belleza natural, la crianza de alpacas y su rica historia cultural.</p>
+</section>
+
+<section id="gastronomia">
+    <h2>Gastronomía Local</h2>
+    <p>Entre los platos más tradicionales destacan:</p>
+    <ul>
+        <li>Caldo de cabeza</li>
+        <li>Chairo altoandino</li>
+        <li>Kankacho de cordero</li>
+        <li>Queso andino artesanal</li>
+        <li>Productos lácteos de la zona</li>
+    </ul>
+</section>
+
+<section id="galeria">
+    <h2>Galería de Imágenes</h2>
+    <div class="galeria">
+        <img src="img/g1.jpg" alt="Paisaje 1">
+        <img src="img/g2.jpg" alt="Paisaje 2">
+        <img src="img/g3.jpg" alt="Fiestas">
+        <img src="img/g4.jpg" alt="Cultura">
+        <img src="img/g5.jpg" alt="Naturaleza">
+        <img src="img/g6.jpg" alt="Costumbres">
+    </div>
+</section>
+
+<section id="videos">
+    <h2>Videos Turísticos</h2>
+
+    <!-- VIDEO LOCAL -->
+    <video width="100%" controls>
+        <source src="videos/turismo_nunoa.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+    </video>
+
+    <br><br>
+
+    <!-- VIDEO DE YOUTUBE -->
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Dirección:</strong> Nuñoa, Melgar - Puno, Perú</p>
+    <p><strong>Email:</strong> turismo@nunoa.pe</p>
+    <p><strong>Teléfono / WhatsApp:</strong> +51 987 111 222</p>
+
+    <p>Síguenos:</p>
+    <ul>
+        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2025 Turismo en Nuñoa - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
